@@ -1,0 +1,18 @@
+button{
+    margin: 5px;
+}
+
+button:hover{
+    background-color: gray;
+}
+
+#forms{
+    margin: 5px;
+    padding: 5px;
+    background-color: blueviolet;
+    width: 25%;
+}
+
+#forms label{
+    font-family: 'Times New Roman', Times, serif;
+}
