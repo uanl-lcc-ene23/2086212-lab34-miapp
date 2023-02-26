@@ -5,18 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="/main.js" async></script>
-    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
 </head>
 <body>
-    <h1>Practica 1</h1>
-    <h3>Alumno: Juan Carlos Tapia</h3>
-    <div id = "forms">
-        <label for="texto">Ingresa un texto:</label>
-        <input type="text" id = "texto" placeholder="Texto">
-        <br>
-        <button onclick="imprimir()">Escribir en Consola</button>
-        <button onclick="limpiar()">Limpiar</button>
-    </div>
+    <ion-app>
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Encabezado</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <div class="fila">
+                <ion-label for="gasto">Tipo de Gasto: </ion-label>
+                <ion-input for="gasto" fill="outline" id="gasto"></ion-input>
+            </div>
+            <div class="fila">
+                <ion-label for="monto">Monto: </ion-label>
+                <ion-input for="monto" fill="outline" id="monto"></ion-input>
+            </div>
+            <div class="fila">
+                <ion-button onclick="agregar()">Guardar</ion-button>
+            </div>
+        </ion-content>
+    </ion-app>
 </body>
+<script src="/script.js"></script>
 </html>
