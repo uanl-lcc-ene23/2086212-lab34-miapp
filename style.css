@@ -1,0 +1,25 @@
+*{
+    padding: 5px;
+    margin: 5px;
+}
+#Login{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+}
+#login, #registro{
+    background-color: blueviolet;
+    color: white;
+    height: 26px;
+    border-radius: 13px;
+    border-width: 0;
+}
+
+#login:hover, #registro:hover{
+    border-width: 1.5px;
+}
+input{
+    border-width: 0;
+    background-color: gainsboro;
+}
