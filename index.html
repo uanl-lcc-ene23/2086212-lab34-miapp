@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presupuesto</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+</head>
+<body>
+    <ion-app>
+        <ion-menu content-id="main-content">
+        <ion-header>
+            <ion-toolbar>
+                <ion-title>Presupuesto</ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+            <ion-item class="fila">
+                <ion-label for="gasto">Tipo de Gasto: </ion-label>
+                <ion-input for="gasto" fill="outline" id="gasto"></ion-input>
+            </ion-item>
+            <ion-item class="fila">
+                <ion-label for="monto">Monto: </ion-label>
+                <ion-input for="monto" fill="outline" id="monto"></ion-input>
+            </ion-item>
+            <ion-item class="fila">
+                <ion-button onclick="agregar()">Guardar</ion-button>
+            </ion-item>
+            <p id="mostrarArray"></p>
+        </ion-content>
+    </ion-menu>
+    <ion-page   id="main-content">
+
+    </ion-page>
+    </ion-app>
+</body>
+<script src="/script.js"></script>
+</html>
