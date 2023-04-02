@@ -1,0 +1,19 @@
+<p>productos works!</p>
+<ion-list>
+    <ion-item>
+      <ion-select aria-label="fruit" interface="popover" placeholder="Select category" (ionChange)="handleChange($event)">
+        <ion-select-option value="{{categoria}}" *ngFor="let categoria of categorias">{{categoria}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+<ion-card *ngFor="let producto of productos">
+    <img alt="Silhouette of mountains" src="{{producto.image}}" />    
+    <ion-card-header>      
+        <ion-card-title>{{producto.title}}</ion-card-title>      
+        <ion-card-subtitle>${{producto.price}}</ion-card-subtitle>    
+    </ion-card-header>    
+    <ion-card-content>      
+        {{producto.description}}
+    </ion-card-content>
+</ion-card>
