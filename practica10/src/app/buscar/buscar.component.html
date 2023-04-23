@@ -1,0 +1,25 @@
+<p>buscar works!</p>
+
+<ion-label>Busqueda por id</ion-label>
+<ion-grid>
+    <ion-row>
+        <ion-col size="1">
+            <ion-input type="text"[(ngModel)]="idProducto"></ion-input>
+        </ion-col>
+        <ion-col>
+            <ion-button (click)="buscarProducto()">
+                <ion-icon name="search-outline"></ion-icon>
+            </ion-button>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+<ion-card>
+    <img alt="Silhouette of mountains" src="{{producto.image}}" />    
+    <ion-card-header>      
+        <ion-card-title>{{producto.title}}</ion-card-title>      
+        <ion-card-subtitle>${{producto.price}}</ion-card-subtitle>    
+    </ion-card-header>    
+    <ion-card-content>      
+        {{producto.description}}
+    </ion-card-content>
+</ion-card>
